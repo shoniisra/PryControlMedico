@@ -25,9 +25,6 @@ import org.springframework.format.annotation.DateTimeFormat;
 @Table(name="RECETA")
 public class Receta implements Serializable{
 
-	/**
-	 * 
-	 */
 	private static final long serialVersionUID = 1L;
 
 	
@@ -55,4 +52,52 @@ public class Receta implements Serializable{
 	public Receta() {
 		
 	}
+
+	public Receta(Integer idreceta) {
+		super();
+		this.idreceta = idreceta;
+	}
+
+	public Integer getIdreceta() {
+		return idreceta;
+	}
+
+	public void setIdreceta(Integer idreceta) {
+		this.idreceta = idreceta;
+	}
+
+	public Calendar getFecha() {
+		return fecha;
+	}
+
+	public void setFecha(Calendar fecha) {
+		this.fecha = fecha;
+	}
+
+	public Medico getMedico() {
+		return medico;
+	}
+
+	public void setMedico(Medico medico) {
+		this.medico = medico;
+	}
+
+	public Paciente getPaciente() {
+		return paciente;
+	}
+
+	public void setPaciente(Paciente paciente) {
+		this.paciente = paciente;
+	}
+
+	public List<DetalleReceta> getDetalles() {
+		return detalles;
+	}
+
+	public void setDetalles(List<DetalleReceta> detalles) {
+		this.detalles = detalles;
+	}
+	
+	
+	
 }
