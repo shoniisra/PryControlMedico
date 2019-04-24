@@ -6,7 +6,7 @@ import com.medico.app.web.models.entities.Medicamento;
 
 public interface IMedicamentoService {
 	
-	public void create(Medicamento medicamento);
+	public void save(Medicamento medicamento);
 	
 	public Medicamento findById(Integer id);
 	

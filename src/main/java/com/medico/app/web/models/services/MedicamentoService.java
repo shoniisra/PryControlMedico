@@ -13,7 +13,7 @@ public class MedicamentoService implements IMedicamentoService {
 	private IMedicamentoDAO dao;
 	
 	@Override
-	public void create(Medicamento medicamento) {
+	public void save(Medicamento medicamento) {
 		// TODO Auto-generated method stub
 		dao.save(medicamento);
 	}
