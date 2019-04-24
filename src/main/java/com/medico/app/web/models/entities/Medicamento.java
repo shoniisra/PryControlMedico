@@ -41,7 +41,7 @@ public class Medicamento implements Serializable {
 	@Column(name = "PRECIO")
 	private float precio;
 	
-	@Column(name = "NOMBRECOMERCIAL")
+	@Column(name = "CONCENTRACION")
 	@Size(max = 255)
 	private String concentracion;
 	

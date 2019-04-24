@@ -8,7 +8,7 @@ public interface IMedicoService {
 
 	public void save(Medico medico);
 	
-	public void findBYId(Integer id);
+	public Medico findById(Integer id);
 	
 	public void delete(Integer id);
 	
