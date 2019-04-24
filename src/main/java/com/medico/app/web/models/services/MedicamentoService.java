@@ -3,10 +3,12 @@ package com.medico.app.web.models.services;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import com.medico.app.web.models.dao.IMedicamentoDAO;
 import com.medico.app.web.models.entities.Medicamento;
 
+@Service
 public class MedicamentoService implements IMedicamentoService {
 
 	@Autowired
